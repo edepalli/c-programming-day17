@@ -1,0 +1,24 @@
+//print second highest numbers using while loop
+#include<stdio.h>
+int main()
+{ 
+  int  i,n,ele,h=0,sh=0;
+  printf("enter number limit:");
+  scanf("%d",&n);
+  printf("enter elements:");
+  i=0;
+  while(i<n)
+  { 
+     scanf("%d",&ele);
+     if(ele>h)
+     {
+     	sh=h;
+     	h=ele;
+	 }
+	 else if(ele>sh)
+	 sh=ele;
+	 i++;
+  }
+    printf("\nSECOND HIGHEST=%d",sh);
+  
+}
